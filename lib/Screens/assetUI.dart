@@ -5,8 +5,8 @@ import 'package:flutter_asset/assetListWidget.dart';
 import 'package:flutter_asset/assets.dart';
 import 'package:provider/provider.dart';
 
-import 'completedListWidget.dart';
-import 'firebaseApi.dart';
+import '../completedListWidget.dart';
+import '../firebaseApi.dart';
 
 class AssetPage extends StatefulWidget {
   @override

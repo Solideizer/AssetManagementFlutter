@@ -4,7 +4,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_asset/assets.dart';
 import 'package:provider/provider.dart';
 
-import 'editAssetPage.dart';
+import 'Screens/editAssetPage.dart';
 import 'asset.dart';
 
 class AssetWidget extends StatelessWidget {

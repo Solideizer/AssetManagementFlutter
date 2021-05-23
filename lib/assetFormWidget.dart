@@ -5,14 +5,14 @@ class AssetFormWidget extends StatelessWidget {
   final String description;
   final DateTime givingDate;
   final DateTime receivingDate;
-  final int receiverID;
+  final String receiverName;
   final String assetType;
   final assetTypeList = ["Fiziksel", "Dijital", "İnsan Kaynağı"];
   final ValueChanged<String> onChangedTitle;
   final ValueChanged<String> onChangedDescription;
   final ValueChanged<DateTime> onChangedGivingDate;
   final ValueChanged<DateTime> onChangedReceivingDate;
-  final ValueChanged<String> onChangedReceiverID;
+  final ValueChanged<String> onChangedReceiverName;
   final ValueChanged<String> onChangedAssetType;
   final VoidCallback onSavedAsset;
 
@@ -22,13 +22,13 @@ class AssetFormWidget extends StatelessWidget {
     this.description = '',
     this.givingDate,
     this.receivingDate,
-    this.receiverID = 0,
+    this.receiverName = "",
     this.assetType = '',
     @required this.onChangedTitle,
     @required this.onChangedDescription,
     this.onChangedGivingDate,
     this.onChangedReceivingDate,
-    this.onChangedReceiverID,
+    this.onChangedReceiverName,
     this.onChangedAssetType,
     @required this.onSavedAsset,
   }) : super(key: key);
@@ -48,7 +48,7 @@ class AssetFormWidget extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 100,
               width: MediaQuery.of(context).size.width,
             ),
-            buildReceiverID(),
+            buildReceiverName(),
             Container(
               height: MediaQuery.of(context).size.height / 100,
               width: MediaQuery.of(context).size.width,
@@ -148,10 +148,9 @@ class AssetFormWidget extends StatelessWidget {
     onChangedGivingDate(newDate);
   }
 
-  buildReceiverID() => TextFormField(
-        maxLines: 3,
-        initialValue: receiverID.toString(),
-        onChanged: onChangedReceiverID,
+  buildReceiverName() => TextFormField(
+        initialValue: receiverName,
+        onChanged: onChangedReceiverName,
         decoration: InputDecoration(
           border: UnderlineInputBorder(),
           labelText: 'Verilen Kişi',
@@ -160,10 +159,14 @@ class AssetFormWidget extends StatelessWidget {
 
   buildAssetType() => DropdownButton(
         hint: Text("Asset tipini seçiniz"),
-        items: assetTypeList.map((dropDownItem) {
-          return DropdownMenuItem<String>(
-              value: dropDownItem, child: Text(dropDownItem));
-        }).toList(),
+        items: assetTypeList.map(
+          (dropDownItem) {
+            return DropdownMenuItem<String>(
+              value: dropDownItem,
+              child: Text(dropDownItem),
+            );
+          },
+        ).toList(),
         //value: assetType,
         onChanged: onChangedAssetType,
       );

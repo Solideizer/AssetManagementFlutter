@@ -34,9 +34,20 @@ class AssetsProvider extends ChangeNotifier {
     return asset.isAssigned;
   }
 
-  void updateAsset(Asset asset, String title, String description) {
+  void updateAsset(
+      Asset asset,
+      String title,
+      String description,
+      DateTime givingDate,
+      DateTime receivingDate,
+      String assetType,
+      String receiverName) {
     asset.title = title;
     asset.description = description;
+    asset.givingDate = givingDate.toString();
+    asset.receivingDate = receivingDate.toString();
+    asset.receiverName = receiverName;
+    asset.assetType = assetType;
 
     FirebaseApi.updateAsset(asset);
   }

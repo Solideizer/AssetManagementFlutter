@@ -18,7 +18,7 @@ class _EditAssetPageState extends State<EditAssetPage> {
   String description;
   DateTime givingDate;
   DateTime receivingDate;
-  String receiverID;
+  String receiverName;
   String assetType;
   final _formKey = GlobalKey<FormState>();
 
@@ -50,8 +50,8 @@ class _EditAssetPageState extends State<EditAssetPage> {
                   setState(() => this.receivingDate = receivingDate),
               onChangedAssetType: (assetType) =>
                   setState(() => this.assetType = assetType),
-              onChangedReceiverID: (receiverID) =>
-                  setState(() => this.receiverID = receiverID),
+              onChangedReceiverName: (receiverName) =>
+                  setState(() => this.receiverName = receiverName),
               onSavedAsset: saveTodo,
             ),
           ),
@@ -64,7 +64,8 @@ class _EditAssetPageState extends State<EditAssetPage> {
       return;
     } else {
       final provider = Provider.of<AssetsProvider>(context, listen: false);
-      provider.updateAsset(widget.asset, title, description);
+      provider.updateAsset(widget.asset, title, description, givingDate,
+          receivingDate, assetType, receiverName);
 
       Navigator.of(context).pop();
     }

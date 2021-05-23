@@ -16,7 +16,7 @@ class _AddAssetDialogWidgetState extends State<AddAssetDialogWidget> {
   String description = '';
   String givingDate;
   String receivingDate;
-  String receiverID = '';
+  String receiverName = '';
   String assetType = '';
   @override
   Widget build(BuildContext context) => AlertDialog(
@@ -43,8 +43,8 @@ class _AddAssetDialogWidgetState extends State<AddAssetDialogWidget> {
                     () => this.receivingDate = receivingDate.toString()),
                 onChangedAssetType: (assetType) =>
                     setState(() => this.assetType = assetType),
-                onChangedReceiverID: (receiverID) =>
-                    setState(() => this.receiverID = receiverID),
+                onChangedReceiverName: (receiverName) =>
+                    setState(() => this.receiverName = receiverName),
                 onSavedAsset: addAsset,
               )
             ],
@@ -63,7 +63,7 @@ class _AddAssetDialogWidgetState extends State<AddAssetDialogWidget> {
         description: description,
         givingDate: givingDate,
         receivingDate: receivingDate,
-        receiverID: receiverID,
+        receiverName: receiverName,
         assetType: assetType,
         id: DateTime.now().toString(),
       );

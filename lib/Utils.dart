@@ -16,10 +16,19 @@ class Utils {
   static StreamTransformer transformer<T>(
           T Function(Map<String, dynamic> json) fromJson) =>
       StreamTransformer<QuerySnapshot, List<T>>.fromHandlers(
-          handleData: (QuerySnapshot data, EventSink<List<T>> sink) {
-        final snaps = data.docs.map((doc) => doc.data()).toList();
-        final objects = snaps.map((json) => fromJson(json)).toList();
+        handleData: (QuerySnapshot data, EventSink<List<T>> sink) {
+          final snaps = data.docs
+              .map(
+                (doc) => doc.data(),
+              )
+              .toList();
+          final objects = snaps
+              .map(
+                (json) => fromJson(json),
+              )
+              .toList();
 
-        sink.add(objects);
-      });
+          sink.add(objects);
+        },
+      );
 }

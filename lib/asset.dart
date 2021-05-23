@@ -12,7 +12,7 @@ class Asset {
   String description;
   String givingDate;
   String receivingDate;
-  String receiverID;
+  String receiverName;
   String assetType;
   bool isAssigned;
 
@@ -23,7 +23,7 @@ class Asset {
     this.id,
     this.givingDate,
     this.receivingDate,
-    this.receiverID,
+    this.receiverName,
     this.assetType,
     this.isAssigned = false,
   });
@@ -35,7 +35,7 @@ class Asset {
         id: json['id'],
         givingDate: json['givingDate'],
         receivingDate: json['receivingDate'],
-        receiverID: json['receiverID'],
+        receiverName: json['receiverName'],
         assetType: json['assetType'],
         isAssigned: json['isAssigned'],
       );
@@ -47,7 +47,7 @@ class Asset {
         'id': id,
         'givingDate': givingDate,
         'receivingDate': receivingDate,
-        'receiverID': receiverID,
+        'receiverName': receiverName,
         'assetType': assetType,
         'isAssigned': isAssigned,
       };

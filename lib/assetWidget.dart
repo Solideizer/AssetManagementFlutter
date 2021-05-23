@@ -105,6 +105,28 @@ class AssetWidget extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 4),
                     child: Text(
+                      'Zimmetlenen Kişi: ',
+                      style: TextStyle(
+                          fontSize: 20,
+                          height: 1.5,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 4),
+                    child: Text(
+                      asset.receiverName,
+                      style: TextStyle(
+                        fontSize: 20,
+                        height: 1.5,
+                        color: Colors.black87,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 4),
+                    child: Text(
                       'Verilme tarihi: ',
                       style: TextStyle(
                           fontSize: 20,

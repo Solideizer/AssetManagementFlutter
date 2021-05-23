@@ -4,9 +4,9 @@
 
 ### **Login Screen** 
 <p align="center">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/0.png" width="310">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.1.png" width="310">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.png" width="310">
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/0.png" width="300">
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.1.png" width="300">
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.png" width="300">
  </p>
 
  

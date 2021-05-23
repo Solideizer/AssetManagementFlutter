@@ -4,24 +4,27 @@
 
 ### **Login Screen** 
 <p align="center">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/0.png" width="250">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.1.png" width="250">
-<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.png" width="250">
- </p>
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/0.png" width="310">
+</p>
 
+### **Register Screen** 
+<p align="center">
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.1.png" width="310">
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/1.png" width="310">
+</p>
  
 ### **Asset Screen** 
- <p align="center">
+<p align="center">
 <img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/2.png" width="310">
 <img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/3.png" width="310">
-   </p>
+</p>
    
 ### **Adding assets** 
 <p align="center">
-  <img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/4.png" width="310">  
-   </p>
+<img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/4.png" width="310">  
+</p>
 
 ## **Screenshots from web app** 
- <p align="center">
+<p align="center">
 <img src="https://github.com/Solideizer/AssetManagementFlutter/blob/main/screenshots/web.png" width="310">  
-  </p>
+</p>

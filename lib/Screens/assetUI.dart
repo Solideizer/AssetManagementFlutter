@@ -72,8 +72,11 @@ class _AssetPageState extends State<AssetPage> {
         backgroundColor: Colors.black,
         onPressed: () => showDialog(
           context: context,
-          child: AddAssetDialogWidget(),
+          //child: AddAssetDialogWidget(),
           barrierDismissible: false,
+          builder: (BuildContext context) {
+            return AddAssetDialogWidget();
+          },
         ),
         child: Icon(
           Icons.add,
